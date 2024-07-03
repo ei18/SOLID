@@ -2,9 +2,9 @@ package org.example.database;
 
 public class DataService {
 
-    private final Database database = new Database();
+    private final DataStorage datastorage = new Database();
 
     public void saveData(String data) {
-        database.save(data);
+        datastorage.save(data);
     }
 }

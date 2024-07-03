@@ -1,6 +1,6 @@
 package org.example.calculator;
 
-public class TaxCalculator {
+public class TaxCalculator implements TaxStrategy{
 
     public double calculateTax(String country) {
         if (country.equals("USA")) {
@@ -11,5 +11,10 @@ public class TaxCalculator {
             return 0.2;
         }
         return 0;
+    }
+
+    @Override
+    public double calculateTax() {
+        return 0.1;
     }
 }

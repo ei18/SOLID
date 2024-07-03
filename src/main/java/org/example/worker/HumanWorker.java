@@ -1,14 +1,13 @@
 package org.example.worker;
 
-public class HumanWorker implements Worker{
+public class HumanWorker implements Workable, Eatable{
 
     @Override
     public void work() {
-        // Lógica para trabajar
     }
 
     @Override
     public void eat() {
-        // Lógica para comer
     }
+
 }
